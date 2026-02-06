@@ -37,7 +37,7 @@ body {
   position: relative;
   width: 100%;
   height: 100px;
-  background-image: url("/img/bgHead.png");
+  background-image: url("../img/bgHead.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -225,7 +225,7 @@ body {
   position: relative;
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url("/img/landing.png");
+  background-image: url("../img/landing.png");
   background-size: cover;
   background-position: center;
   z-index: 0;
