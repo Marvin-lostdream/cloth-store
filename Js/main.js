@@ -28,3 +28,12 @@ function typeWriter() {
 }
 
 typeWriter();
+
+const start = document.querySelector(".start");
+
+start.onclick = () => {
+  window.scrollTo({
+    top: 750,
+    behavior: "smooth",
+  });
+};

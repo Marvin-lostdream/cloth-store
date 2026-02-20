@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/ico" href="/img/shopping-bag-16.ico" />
     <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/categories.css" />
     <link
       rel="preload"
       href="CSS/all.min.css"
@@ -34,6 +35,7 @@
         <li>
           <a href="/index.html"> الصفحة الرئيسية </a>
         </li>
+
         <li>
           <a href="/cartPage.html">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -48,60 +50,34 @@
         </li>
       </ul>
     </header>
-    <div class="landing">
-      <div class="info">
-        <h2>
-          <span class="cursor">|</span>
-          <span id="typewriter"></span>
-        </h2>
-        <span class="tagline"></span>
-        <p>... تسوق الآن</p>
-        <a class="start" href="#">ابدأ تجربتك</a>
-      </div>
+    <div class="title">
+      <h1>قسم الاطفال</h1>
+      <p>كافة انواع الألبسةالخاصة بالاطفال</p>
     </div>
-    <section class="categories" aria-labelledby="categories-title">
-      <h2 class="categories-title">تصفح الأقسام</h2>
+    <section class="category">
+      <nav class="all-sections">
+        <h3>: كافة الأقسام</h3>
+        <ul>
+          <li class="men"><a href="/categoryMen.html">قسم الرجال</a></li>
+          <li class="women"><a href="/categoryWomen.html">قسم النساء</a></li>
+          <li class="active kids">
+            <a href="/categoryKids.html">قسم الاطفال</a>
+          </li>
+          <li class="accessories">
+            <a href="/categoryAccessories.html">قسم الإكسسوارات</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="added"></div>
       <div class="container">
-        <div class="category-card men">
-          <h3>قسم الرجالي</h3>
-          <div>
-            <img src="img/categoryMen.png" alt="ملابس رجالية" loading="lazy" />
-          </div>
-          <p>مجموعة من أرقى انواع الملابس الرجالية</p>
-          <a class="man" href="/categoryMen.html">تصفح الآن</a>
+        <div class="clothes">
+          <h3>: ملابس أطفال</h3>
+          <ul>
+            <li data-section="kshose">أحذية</li>
+            <li class="active" data-section="kClothe">قمصان وبناطيل</li>
+          </ul>
         </div>
-        <div class="category-card women">
-          <h3>قسم النسائي</h3>
-          <div>
-            <img
-              src="img/categoryWoman.png"
-              alt="ملابس نسائية"
-              loading="lazy"
-            />
-          </div>
-          <p>مجموعة من أرقى انواع الملابس النسائية</p>
-          <a class="woman" href="/categoryWomen.html">تصفح الآن</a>
-        </div>
-        <div class="category-card kids">
-          <h3>قسم الأطفال</h3>
-          <div>
-            <img src="img/categoryKids.png" alt="ملابس أطفال" loading="lazy" />
-          </div>
-          <p>مجموعة من أرقى انواع الملابس الأطفال</p>
-          <a class="kids" href="/categoryKids.html">تصفح الآن</a>
-        </div>
-        <div class="category-card acc">
-          <h3>قسم الإكسسوارت</h3>
-          <div>
-            <img
-              src="img/categoryAccessories.png"
-              alt="إكسسوارات"
-              loading="lazy"
-            />
-          </div>
-          <p>مجموعة من أرقى انواع الإكسسوارات</p>
-          <a class="accesories" href="/categoryAccessories.html">تصفح الآن</a>
-        </div>
+        <div class="products" data-category="kids"></div>
       </div>
     </section>
     <footer id="footer" class="footer">
@@ -141,5 +117,6 @@
       </div>
     </footer>
     <script src="Js/main.js"></script>
+    <script src="Js/categories.js"></script>
   </body>
 </html>
