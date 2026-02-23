@@ -485,42 +485,42 @@
               "name": "احذية نسائية 1",
               "price": 200,
               "inStock": true,
-              "image": "/img/products/wshose-one.png",
+              "image": "/img/products/wShose-one.png",
               "special": true
             },
             {
               "name": "احذية نسائية 2",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/wshose-two.png",
+              "image": "/img/products/wShose-two.png",
               "special": false
             },
             {
               "name": "احذية نسائية 3",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/wshose-three.png",
+              "image": "/img/products/wShose-three.png",
               "special": false
             },
             {
               "name": "احذية نسائية 4",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/wshose-four.png",
+              "image": "/img/products/wShose-four.png",
               "special": false
             },
             {
               "name": "احذية نسائية 5",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/wshose-five.png",
+              "image": "/img/products/wShose-five.png",
               "special": false
             },
             {
               "name": "احذية نسائية 6",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/wshose-six.png",
+              "image": "/img/products/wShose-six.png",
               "special": false
             }
           ]
