@@ -10,49 +10,57 @@
               "name": "قميص أبيض",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/tShirt-four.png"
+              "image": "/img/products/tShirt-four.png",
+              "special": true
             },
             {
               "name": "قميص اسود",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/tShirt-two.png"
+              "image": "/img/products/tShirt-two.png",
+              "special": false
             },
             {
               "name": "قميص ازرق",
               "price": 120,
               "inStock": true,
-              "image": "/img/products/tShirt-three.png"
+              "image": "/img/products/tShirt-three.png",
+              "special": false
             },
             {
               "name": "قميص بني فاتح",
               "price": 110,
               "inStock": false,
-              "image": "/img/products/tShirt-one.png"
+              "image": "/img/products/tShirt-one.png",
+              "special": false
             },
             {
               "name": "بنطال أبيض",
               "price": 90,
               "inStock": true,
-              "image": "/img/products/pants-two.png"
+              "image": "/img/products/pants-two.png",
+              "special": false
             },
             {
               "name": "بنطال اسود",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/pants-three.png"
+              "image": "/img/products/pants-three.png",
+              "special": false
             },
             {
               "name": "بنطال رمادي",
               "price": 120,
               "inStock": true,
-              "image": "/img/products/pants-four.png"
+              "image": "/img/products/pants-four.png",
+              "special": false
             },
             {
               "name": "بنطال بني فاتح",
               "price": 110,
               "inStock": true,
-              "image": "/img/products/pants-one.png"
+              "image": "/img/products/pants-one.png",
+              "special": false
             }
           ]
         },
@@ -63,49 +71,57 @@
               "name": "بدلة بيضاء",
               "price": 500,
               "inStock": true,
-              "image": "/img/products/suit-five.png"
+              "image": "/img/products/suit-five.png",
+              "special": true
             },
             {
               "name": "بدلة سوداء",
               "price": 800,
               "inStock": true,
-              "image": "/img/products/suit-two.png"
+              "image": "/img/products/suit-two.png",
+              "special": false
             },
             {
               "name": "بدلة باللون البني",
               "price": 500,
               "inStock": false,
-              "image": "/img/products/suit-six.png"
+              "image": "/img/products/suit-six.png",
+              "special": false
             },
             {
               "name": "بدلة حمراء",
               "price": 900,
               "inStock": true,
-              "image": "/img/products/suit-four.png"
+              "image": "/img/products/suit-four.png",
+              "special": false
             },
             {
               "name": "بدلة بيج",
               "price": 500,
               "inStock": true,
-              "image": "/img/products/suit-three.png"
+              "image": "/img/products/suit-three.png",
+              "special": false
             },
             {
               "name": "بدلة زيتية",
               "price": 500,
               "inStock": true,
-              "image": "/img/products/suit-seven.png"
+              "image": "/img/products/suit-seven.png",
+              "special": false
             },
             {
               "name": "بدلة زرقاء",
               "price": 500,
               "inStock": true,
-              "image": "/img/products/suit-one.png"
+              "image": "/img/products/suit-one.png",
+              "special": false
             },
             {
               "name": "بدلة غامقة",
               "price": 500,
               "inStock": false,
-              "image": "/img/products/suit-eight.png"
+              "image": "/img/products/suit-eight.png",
+              "special": false
             }
           ]
         },
@@ -116,49 +132,57 @@
               "name": "حذاء رياضي اسود",
               "price": 180,
               "inStock": true,
-              "image": "/img/products/Mshose-one.png"
+              "image": "/img/products/Mshose-one.png",
+              "special": true
             },
             {
               "name": "حذاء رسمي اسود",
               "price": 80,
               "inStock": true,
-              "image": "/img/products/Mshose-two.png"
+              "image": "/img/products/Mshose-two.png",
+              "special": true
             },
             {
               "name": "حذاء شتوي اسود",
               "price": 120,
               "inStock": true,
-              "image": "/img/products/Mshose-three.png"
+              "image": "/img/products/Mshose-three.png",
+              "special": false
             },
             {
               "name": "حذاء اسود",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/Mshose-four.png"
+              "image": "/img/products/Mshose-four.png",
+              "special": false
             },
             {
               "name": "حذاء بني",
               "price": 90,
               "inStock": true,
-              "image": "/img/products/Mshose-five.png"
+              "image": "/img/products/Mshose-five.png",
+              "special": false
             },
             {
               "name": "حذاء رياضي",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/Mshose-six.png"
+              "image": "/img/products/Mshose-six.png",
+              "special": false
             },
             {
               "name": "حذاء رياضي اسود",
               "price": 130,
               "inStock": false,
-              "image": "/img/products/Mshose-seven.png"
+              "image": "/img/products/Mshose-seven.png",
+              "special": false
             },
             {
               "name": "حذاء بني رسمي",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/Mshose-eight.png"
+              "image": "/img/products/Mshose-eight.png",
+              "special": false
             }
           ]
         }
@@ -174,49 +198,57 @@
               "name": "1 ملابس اطفال",
               "price": 70,
               "inStock": true,
-              "image": "/img/products/kClothe-one.png"
+              "image": "/img/products/kClothe-one.png",
+              "special": true
             },
             {
               "name": "ملابس اطفال 2",
               "price": 80,
               "inStock": false,
-              "image": "/img/products/kClothe-two.png"
+              "image": "/img/products/kClothe-two.png",
+              "special": false
             },
             {
               "name": "ملابس اطفال 3",
               "price": 90,
               "inStock": true,
-              "image": "/img/products/kClothe-three.png"
+              "image": "/img/products/kClothe-three.png",
+              "special": false
             },
             {
               "name": "ملابس اطفال 4",
               "price": 70,
               "inStock": true,
-              "image": "/img/products/kClothe-four.png"
+              "image": "/img/products/kClothe-four.png",
+              "special": false
             },
             {
               "name": "ملابس اطفال 5",
               "price": 80,
               "inStock": true,
-              "image": "/img/products/kClothe-five.png"
+              "image": "/img/products/kClothe-five.png",
+              "special": false
             },
             {
               "name": "ملابس اطفال 6",
               "price": 70,
               "inStock": false,
-              "image": "/img/products/kClothe-six.png"
+              "image": "/img/products/kClothe-six.png",
+              "special": false
             },
             {
               "name": "ملابس اطفال 7",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/kClothe-seven.png"
+              "image": "/img/products/kClothe-seven.png",
+              "special": false
             },
             {
               "name": "ملابس اطفال 8",
               "price": 90,
               "inStock": true,
-              "image": "/img/products/kClothe-eight.png"
+              "image": "/img/products/kClothe-eight.png",
+              "special": false
             }
           ]
         },
@@ -227,49 +259,57 @@
               "name": "احذية اطفال 1",
               "price": 50,
               "inStock": true,
-              "image": "/img/products/kShose-one.png"
+              "image": "/img/products/kShose-one.png",
+              "special": true
             },
             {
               "name": "احذية اطفال 2",
               "price": 60,
               "inStock": false,
-              "image": "/img/products/kShose-two.png"
+              "image": "/img/products/kShose-two.png",
+              "special": true
             },
             {
               "name": "احذية اطفال 3",
               "price": 75,
               "inStock": true,
-              "image": "/img/products/kShose-three.png"
+              "image": "/img/products/kShose-three.png",
+              "special": false
             },
             {
               "name": "احذية اطفال 4",
               "price": 90,
               "inStock": true,
-              "image": "/img/products/kShose-four.png"
+              "image": "/img/products/kShose-four.png",
+              "special": false
             },
             {
               "name": "احذية اطفال 5",
               "price": 80,
               "inStock": true,
-              "image": "/img/products/kShose-five.png"
+              "image": "/img/products/kShose-five.png",
+              "special": false
             },
             {
               "name": "احذية اطفال 6",
               "price": 50,
               "inStock": true,
-              "image": "/img/products/kShose-six.png"
+              "image": "/img/products/kShose-six.png",
+              "special": false
             },
             {
               "name": "احذية اطفال 7",
               "price": 40,
               "inStock": true,
-              "image": "/img/products/kShose-seven.png"
+              "image": "/img/products/kShose-seven.png",
+              "special": false
             },
             {
               "name": "احذية اطفال 8",
               "price": 60,
               "inStock": false,
-              "image": "/img/products/kShose-eight.png"
+              "image": "/img/products/kShose-eight.png",
+              "special": false
             }
           ]
         }
@@ -285,37 +325,43 @@
               "name": "اكسسوارات 1",
               "price": 200,
               "inStock": true,
-              "image": "/img/products/acces-one.png"
+              "image": "/img/products/acces-one.png",
+              "special": true
             },
             {
               "name": "اكسسوارات 2",
               "price": 100,
               "inStock": true,
-              "image": "/img/products/acces-two.png"
+              "image": "/img/products/acces-two.png",
+              "special": false
             },
             {
               "name": "اكسسوارات 3",
               "price": 200,
               "inStock": true,
-              "image": "/img/products/acces-three.png"
+              "image": "/img/products/acces-three.png",
+              "special": false
             },
             {
               "name": "اكسسوارات 4",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/acces-four.png"
+              "image": "/img/products/acces-four.png",
+              "special": false
             },
             {
               "name": "اكسسوارات 5",
               "price": 200,
               "inStock": true,
-              "image": "/img/products/acces-five.png"
+              "image": "/img/products/acces-five.png",
+              "special": false
             },
             {
               "name": "اكسسوارات 6",
               "price": 250,
               "inStock": true,
-              "image": "/img/products/acces-six.png"
+              "image": "/img/products/acces-six.png",
+              "special": false
             }
           ]
         },
@@ -326,37 +372,156 @@
               "name": "ساعة يد 1",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/watch-one.png"
+              "image": "/img/products/watch-one.png",
+              "special": true
             },
             {
               "name": "ساعة يد 2",
               "price": 250,
               "inStock": true,
-              "image": "/img/products/watch-two.png"
+              "image": "/img/products/watch-two.png",
+              "special": false
             },
             {
               "name": "ساعة يد 2",
               "price": 350,
               "inStock": true,
-              "image": "/img/products/watch-three.png"
+              "image": "/img/products/watch-three.png",
+              "special": false
             },
             {
               "name": "ساعة يد 4",
               "price": 200,
               "inStock": true,
-              "image": "/img/products/watch-four.png"
+              "image": "/img/products/watch-four.png",
+              "special": false
             },
             {
               "name": "ساعة يد 5",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/watch-five.png"
+              "image": "/img/products/watch-five.png",
+              "special": false
             },
             {
               "name": "ساعة يد 6",
               "price": 300,
               "inStock": true,
-              "image": "/img/products/watch-six.png"
+              "image": "/img/products/watch-six.png",
+              "special": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "women",
+      "subcategories": [
+        {
+          "name": "wClothes",
+          "products": [
+            {
+              "name": "ملابس نسائية 1",
+              "price": 300,
+              "inStock": true,
+              "image": "/img/products/women-one.png",
+              "special": true
+            },
+            {
+              "name": "ملابس نسائية 2",
+              "price": 350,
+              "inStock": true,
+              "image": "/img/products/women-two.png",
+              "special": false
+            },
+            {
+              "name": "ملابس نسائية 3",
+              "price": 250,
+              "inStock": true,
+              "image": "/img/products/women-three.png",
+              "special": false
+            },
+            {
+              "name": "ملابس نسائية 4",
+              "price": 550,
+              "inStock": true,
+              "image": "/img/products/women-four.png",
+              "special": false
+            },
+            {
+              "name": "ملابس نسائية 5",
+              "price": 450,
+              "inStock": true,
+              "image": "/img/products/women-five.png",
+              "special": false
+            },
+            {
+              "name": "ملابس نسائية 6",
+              "price": 250,
+              "inStock": true,
+              "image": "/img/products/women-six.png",
+              "special": false
+            },
+            {
+              "name": "ملابس نسائية 7",
+              "price": 150,
+              "inStock": true,
+              "image": "/img/products/women-seven.png",
+              "special": false
+            },
+            {
+              "name": "ملابس نسائية 8",
+              "price": 100,
+              "inStock": true,
+              "image": "/img/products/women-eight.png",
+              "special": false
+            }
+          ]
+        },
+        {
+          "name": "wShose",
+          "products": [
+            {
+              "name": "احذية نسائية 1",
+              "price": 200,
+              "inStock": true,
+              "image": "/img/products/wshose-one.png",
+              "special": true
+            },
+            {
+              "name": "احذية نسائية 2",
+              "price": 300,
+              "inStock": true,
+              "image": "/img/products/wshose-two.png",
+              "special": false
+            },
+            {
+              "name": "احذية نسائية 3",
+              "price": 300,
+              "inStock": true,
+              "image": "/img/products/wshose-three.png",
+              "special": false
+            },
+            {
+              "name": "احذية نسائية 4",
+              "price": 300,
+              "inStock": true,
+              "image": "/img/products/wshose-four.png",
+              "special": false
+            },
+            {
+              "name": "احذية نسائية 5",
+              "price": 300,
+              "inStock": true,
+              "image": "/img/products/wshose-five.png",
+              "special": false
+            },
+            {
+              "name": "احذية نسائية 6",
+              "price": 300,
+              "inStock": true,
+              "image": "/img/products/wshose-six.png",
+              "special": false
             }
           ]
         }

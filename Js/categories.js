@@ -115,6 +115,22 @@ fetch("/products.json")
           cartbtn.innerHTML = "غير متاح حاليا";
         }
 
+        let discount =
+          data.categories[index].subcategories[subindex].products[i].special;
+
+        let special = document.createElement("div");
+        special.classList.add("special");
+        let spDiscount = document.createTextNode("حسم %10");
+        special.appendChild(spDiscount);
+        if (discount) {
+          product.appendChild(special);
+          let newPrice =
+            (data.categories[index].subcategories[subindex].products[i].price /
+              10) %
+            100;
+          pSpan.innerHTML = newPrice + " ل.س ";
+        }
+
         // Send To LocalStorage
 
         cartbtn.addEventListener("click", () => {

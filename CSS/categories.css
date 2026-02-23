@@ -190,6 +190,7 @@
 }
 
 .products .product {
+  position: relative;
   max-width: 250px;
   background-color: white;
   text-align: center;
@@ -242,6 +243,29 @@
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.special {
+  position: absolute;
+  writing-mode: sideways-lr;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 10px 35px 10px;
+  top: 0;
+  right: 10px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.special::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border: 20px solid;
+  border-color: transparent transparent white transparent;
 }
 
 /* Medium Screen */
@@ -312,9 +336,6 @@
   font-weight: bold;
   transition: 0.5s;
   z-index: 1;
-
 }
-
-
 
 /* End Products */
