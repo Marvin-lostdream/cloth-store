@@ -125,9 +125,8 @@ fetch("/products.json")
         if (discount) {
           product.appendChild(special);
           let newPrice =
-            (data.categories[index].subcategories[subindex].products[i].price /
-              10) %
-            100;
+            data.categories[index].subcategories[subindex].products[i].price *
+            0.1;
           pSpan.innerHTML = newPrice + " ل.س ";
         }
 
@@ -187,6 +186,140 @@ fetch("/products.json")
         // All products
         products.appendChild(product);
       }
+    }
+
+    // Search input
+
+    let search = document.getElementById("search");
+    search.addEventListener("input", () => {
+      const value = search.value.toLowerCase();
+      products.innerHTML = "";
+
+      if (value === "") {
+        displayProducts(
+          defaultCategory.name,
+          defaultSection,
+          defaultIndex,
+          defaultSubindex,
+        );
+        return;
+      }
+      let found = false;
+      defaultCategory.subcategories.forEach((sub) => {
+        sub.products.forEach((product) => {
+          if (product.name.toLowerCase().includes(value)) {
+            searchProducts(product);
+            found = true;
+          }
+        });
+      });
+      if (!found) {
+        products.innerHTML = `<p style="text-align: center;">لا توجد منتجات مطابقة</p>`;
+      }
+    });
+
+    function searchProducts(product) {
+      let div = document.createElement("div");
+      div.classList.add("product");
+      let title = document.createElement("h3");
+      title.textContent = product.name;
+
+      let img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+
+      let info = document.createElement("div");
+      info.classList.add("info");
+      let price = document.createElement("p");
+      price.appendChild(document.createTextNode("السعر : "));
+      let pSpan = document.createElement("span");
+      pSpan.append(product.price);
+      pSpan.innerHTML += " ل.س ";
+      price.appendChild(pSpan);
+      let stats = document.createElement("p");
+      stats.appendChild(document.createTextNode("الحالة :"));
+      let sSpan = document.createElement("span");
+      let inStock = product.inStock;
+      sSpan.innerHTML = inStock ? " متوفر " : " غير متوفر ";
+      sSpan.style.color = inStock ? "blue" : "red";
+      stats.appendChild(sSpan);
+      info.appendChild(price);
+      info.appendChild(stats);
+      let cartbtn = document.createElement("button");
+      cartbtn.classList.add("cartBtn");
+      if (inStock) {
+        cartbtn.style.cssText = "background-color: #ff5722; color:black";
+        cartbtn.innerHTML = "إضافة إلى السلة";
+      } else {
+        cartbtn.style.cssText =
+          "background-color: #6e6e6e; color:black; pointer-events: none; user-select: none";
+        cartbtn.innerHTML = "غير متاح حاليا";
+      }
+
+      let discount = product.special;
+
+      let special = document.createElement("div");
+      special.classList.add("special");
+      let spDiscount = document.createTextNode("حسم %10");
+      special.appendChild(spDiscount);
+      if (discount) {
+        div.appendChild(special);
+        let newPrice = product.price * 0.1;
+        pSpan.innerHTML = newPrice + " ل.س ";
+      }
+
+      // Send To LocalStorage
+
+      cartbtn.addEventListener("click", () => {
+        const added = document.querySelector(".added");
+
+        setTimeout(() => {
+          added.style.left = 0;
+        }, 0);
+        setTimeout(() => {
+          added.style.left = -100 + "%";
+        }, 2000);
+
+        const cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        const exists = cart.some((item) => item.name === product.name);
+        if (exists) {
+          added.innerHTML = "! تمت إضافته في السلة مسبقا";
+          added.style.backgroundColor = "#dd4e4e";
+          setTimeout(() => {
+            added.style.left = 0;
+          }, 0);
+          setTimeout(() => {
+            added.style.left = -100 + "%";
+          }, 2000);
+          return;
+        } else {
+          added.innerHTML = "! تمت الإضافة إلى السلة";
+          added.style.backgroundColor = "#44cc88";
+          setTimeout(() => {
+            added.style.left = 0;
+          }, 0);
+          setTimeout(() => {
+            added.style.left = -100 + "%";
+          }, 2000);
+        }
+
+        cart.push({
+          name: product.name,
+          price: product.price,
+          image: product.image,
+          inStock: product.inStock,
+        });
+
+        localStorage.setItem("cartItems", JSON.stringify(cart));
+      });
+
+      div.appendChild(title);
+      div.appendChild(img);
+      div.appendChild(info);
+      div.appendChild(cartbtn);
+      // New products
+      products.appendChild(div);
     }
   });
 

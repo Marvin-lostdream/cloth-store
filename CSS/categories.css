@@ -180,6 +180,40 @@
   left: 0;
 }
 
+.shContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 15px 10px 0;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.shContainer p {
+  font-weight: bold;
+}
+
+.shContainer input[type="search"] {
+  background-color: #ddd;
+  border: none;
+  width: 250px;
+  font-weight: bold;
+  font-family: "Noto Sans Arabic", sans-serif;
+  outline: none;
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.shContainer input[type="search"]:focus {
+  outline: 2px solid black;
+  background-color: #d4d4d4;
+}
+
+.shContainer input[type="search"]::placeholder {
+  color: rgb(39, 39, 39);
+}
 /* Start Products */
 
 .products {
