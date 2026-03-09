@@ -126,7 +126,7 @@ fetch("/products.json")
           product.appendChild(special);
           let newPrice =
             data.categories[index].subcategories[subindex].products[i].price *
-            0.1;
+            0.9;
           pSpan.innerHTML = newPrice + " ل.س ";
         }
 
@@ -210,11 +210,19 @@ fetch("/products.json")
           if (product.name.toLowerCase().includes(value)) {
             searchProducts(product);
             found = true;
+          } else {
+            found = false;
           }
         });
       });
-      if (!found) {
-        products.innerHTML = `<p style="text-align: center;">لا توجد منتجات مطابقة</p>`;
+
+      let msg = document.getElementById("msgNotFound");
+
+      if (!found && !msg) {
+        products.insertAdjacentHTML(
+          "afterend",
+          `<p id="msgNotFound" style = "text-align:center; color:red; margin-bottom:30px;">لا توجد منتجات مطابقة</p>`,
+        );
       }
     });
 
@@ -264,7 +272,7 @@ fetch("/products.json")
       special.appendChild(spDiscount);
       if (discount) {
         div.appendChild(special);
-        let newPrice = product.price * 0.1;
+        let newPrice = product.price * 0.9;
         pSpan.innerHTML = newPrice + " ل.س ";
       }
 
