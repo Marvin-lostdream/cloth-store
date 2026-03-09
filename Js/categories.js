@@ -194,6 +194,7 @@ fetch("/products.json")
     search.addEventListener("input", () => {
       const value = search.value.toLowerCase();
       products.innerHTML = "";
+      let msg = document.getElementById("msgNotFound");
 
       if (value === "") {
         displayProducts(
@@ -202,6 +203,7 @@ fetch("/products.json")
           defaultIndex,
           defaultSubindex,
         );
+        msg.remove();
         return;
       }
       let found = false;
@@ -210,13 +212,12 @@ fetch("/products.json")
           if (product.name.toLowerCase().includes(value)) {
             searchProducts(product);
             found = true;
-          } else {
-            found = false;
+            if (msg) {
+              msg.remove();
+            }
           }
         });
       });
-
-      let msg = document.getElementById("msgNotFound");
 
       if (!found && !msg) {
         products.insertAdjacentHTML(
