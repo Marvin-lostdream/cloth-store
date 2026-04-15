@@ -143,7 +143,7 @@ fetch("/products.json")
                     <div class="info">
                       <p>القياسات :<span style="color: rgb(61, 61, 175)"> متوفر بجميع القياسات</span></p>
                       <p>الحالة :<span style="color: ${product.inStock ? "blue" : "red"}">${product.inStock ? "متوفر" : "غير متوفر"}</span></p>
-                      <p>السعر : ${product.special ? `<span style="text-decoration: line-through; color: #acacac;">${product.price}</span> <span style="color: #ff8c20;">${product.price * 0.9} ل.س</span>` : product.price + " ل.س"}</p>
+                      <p>السعر : ${product.special ? `<span style="text-decoration: line-through; color: #acacac;">${product.price}</span> <span style="color: blue;">${product.price * 0.9} ل.س</span>` : product.price + " ل.س"}</p>
                     </div>
                   <button class="cartBtn detailsCartBtn" style="${product.inStock ? "background-color: #ff5722; color:black;" : "background-color: #6e6e6e; color:black; pointer-events: none; user-select: none"}">${product.inStock ? "إضافة إلى السلة" : "غير متاح حاليا"}</button>
                 </div>
