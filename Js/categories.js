@@ -142,7 +142,7 @@ fetch("/products.json")
                   <div class="infoDiv">
                     <div class="info">
                       <p>اسم المنتج : <span style="color:#795548">${product.name}</span></p>
-                      <p>القياسات : <span style="color:#795548"> متوفر بجميع القياسات</span></p>
+                      <p>القياسات : <span style="color:#795548">${product.inStock ? "متوفر بجميع القياسات" : "لا يوجد"}</span></p>
                       <p>الحالة : <span style="color: ${product.inStock ? "#795548" : "red"}">${product.inStock ? "متوفر" : "غير متوفر"}</span></p> 
                       <p>السعر : ${product.special ? `<span style="text-decoration: line-through; color: #acacac;">${product.price}</span> <span style="color: #6d2e17;">${product.price * 0.9} ل.س</span>` : `<span style="color:#795548;"> ${product.price} ل.س</span>`}</p>
                     </div>
