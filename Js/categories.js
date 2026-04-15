@@ -275,7 +275,7 @@ window.onscroll = () => {
     cursor: pointer;
     font-size: 26px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.9);
-    z-index: 1000;
+    z-index: 80;
     opacity:0;
     transition:all 0.3s;
     `;
